@@ -3,7 +3,9 @@ let total = 0;
 let right = 0;
 var r = document.querySelector(":root");
 setInterval(function(){
-	document.querySelector(".score").innerHTML = right+"/"+total;
+	if (total != 0) {
+		document.querySelector(".score").innerHTML = right+"/"+total+ " ("+Math.round((right/total)*100)+"%)";
+	}
 }, 10);
 function toTitleCase(str) {
   return str
