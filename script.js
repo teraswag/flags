@@ -2,6 +2,7 @@ let currentcn;
 let total = 0;
 let right = 0;
 var r = document.querySelector(":root");
+let mode = "normal.json";
 setInterval(function(){
 	if (total != 0) {
 		document.querySelector(".score").innerHTML = right+"/"+total+ " ("+Math.round((right/total)*100)+"%)";
@@ -17,7 +18,7 @@ function toTitleCase(str) {
 async function getRandomKeyValuePair() {
 	
   try {
-    const response = await fetch('cntrys.json');
+    const response = await fetch(mode);
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
@@ -148,4 +149,37 @@ function pirFont() {
 
 function aluFont() {
   r.style.setProperty("--fnt", "'Alumni Sans Pinstripe', sans-serif");
+}
+
+function easyMode() {
+	total = 0;
+	right = 0;
+	mode = "easy.json";
+	shuffle();
+	document.querySelector(".active").classList.remove("active");
+	document.getElementById("ez").classList.add("active");
+}
+function normalMode() {
+	total = 0;
+	right = 0;
+	mode = "normal.json";
+	shuffle();
+	document.querySelector(".active").classList.remove("active");
+	document.getElementById("no").classList.add("active");
+}
+function hardMode() {
+	total = 0;
+	right = 0;
+	mode = "hard.json";
+	shuffle();
+	document.querySelector(".active").classList.remove("active");
+	document.getElementById("ha").classList.add("active");
+}
+function allMode() {
+	total = 0;
+	right = 0;
+	mode = "all.json";
+	shuffle();
+	document.querySelector(".active").classList.remove("active");
+	document.getElementById("al").classList.add("active");
 }
