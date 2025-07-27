@@ -1,47 +1,409 @@
 [
-  { "code": "AF", "name": "afghanistan" },
-  { "code": "AU", "name": "australia" },
-  { "code": "AT", "name": "austria" },
-  { "code": "BE", "name": "belgium" },
-  { "code": "BR", "name": "brazil" },
-  { "code": "CA", "name": "canada" },
-  { "code": "CN", "name": "china" },
-  { "code": "DK", "name": "denmark" },
-  { "code": "EG", "name": "egypt" },
-  { "code": "FI", "name": "finland" },
-  { "code": "FR", "name": "france" },
-  { "code": "DE", "name": "germany" },
-  { "code": "GR", "name": "greece" },
-  { "code": "IS", "name": "iceland" },
-  { "code": "IN", "name": "india" },
-  { "code": "IE", "name": "ireland" },
-  { "code": "IL", "name": "israel" },
-  { "code": "IT", "name": "italy" },
-  { "code": "JM", "name": "jamaica" },
-  { "code": "JP", "name": "japan" },
-  { "code": "KE", "name": "kenya" },
-  { "code": "KP", "name": "north korea" },
-  { "code": "KR", "name": "south korea" },
-  { "code": "MX", "name": "mexico" },
-  { "code": "NP", "name": "nepal" },
-  { "code": "NL", "name": "netherlands" },
-  { "code": "NZ", "name": "new zealand" },
-  { "code": "NO", "name": "norway" },
-  { "code": "PK", "name": "pakistan" },
-  { "code": "PT", "name": "portugal" },
-  { "code": "RO", "name": "romania" },
-  { "code": "RU", "name": "russia" },
-  { "code": "SA", "name": "saudi arabia" },
-  { "code": "SG", "name": "singapore" },
-  { "code": "ZA", "name": "south africa" },
-  { "code": "ES", "name": "spain" },
-  { "code": "SE", "name": "sweden" },
-  { "code": "CH", "name": "switzerland" },
-  { "code": "TH", "name": "thailand" },
-  { "code": "TR", "name": "turkey" },
-  { "code": "UA", "name": "ukraine" },
-  { "code": "AE", "name": "uae" },
-  { "code": "GB", "name": "uk" },
-  { "code": "US", "name": "usa" },
-  { "code": "VN", "name": "vietnam" }
+  {
+    "code": "AF",
+    "names": [
+      "afghanistan", "afganistan", "afganisthan", "afghan", "afghansitan",
+      "afganstan", "afgansthan", "afg", "afghanisthan", "avganistan",
+      "afganisthan", "afgahnistan", "afganhtan", "afganha", "afgahn",
+      "afganishan", "afghanatan", "afghanastan", "afghnia", "afvghanistan"
+    ]
+  },
+  {
+    "code": "AU",
+    "names": [
+      "australia", "austrilia", "australya", "australlia", "oz",
+      "australie", "austrailia", "aust", "austaralia", "austarla",
+      "austaralaya", "australy", "ausrtalia", "ausralia", "austraylia",
+      "austalia", "austrailia", "ausralia", "ostralia", "austraila"
+    ]
+  },
+  {
+    "code": "AT",
+    "names": [
+      "austria", "austraya", "austira", "austr", "osterrich",
+      "osterreich", "austrie", "oesterreich", "austra", "ostereich",
+      "austrich", "austriah", "austrichia", "austira", "oersterreich",
+      "austrri", "austriah", "austiraia", "austraco", "austeira"
+    ]
+  },
+  {
+    "code": "BE",
+    "names": [
+      "belgium", "belguim", "belgum", "beljik", "belgiu",
+      "belgiam", "beelegium", "belgiuim", "belgiuma", "belgiumm",
+      "belgim", "belguim", "belgiun", "beligum", "belgum",
+      "belgiumi", "belgiue", "belgimu", "belgiunm", "belgiumm"
+    ]
+  },
+  {
+    "code": "BR",
+    "names": [
+      "brazil", "brasil", "brazill", "brezil", "brazile",
+      "brazillia", "brazial", "brazli", "brazill", "brazeland",
+      "brazilia", "brzail", "brazail", "brazl", "braziliaa",
+      "brazildo", "brazilld", "brazis", "braz", "braizl"
+    ]
+  },
+  {
+    "code": "CA",
+    "names": [
+      "canada", "caneda", "cannda", "canadaa", "canad",
+      "canedaa", "canda", "canads", "cannada", "canadad",
+      "canadah", "canadda", "canede", "canndaa", "canadaa",
+      "canada ", "cannd", "caanda", "cancal", "canadda"
+    ]
+  },
+  {
+    "code": "CN",
+    "names": [
+      "china", "chinaa", "chna", "chin", "prc",
+      "people's republic of china", "people republic of china", "pr china", "chaina", "chnia",
+      "cchina", "chinac", "chin", "chnina", "chna",
+      "prcchina", "c.h.i.n.a", "chinaz", "chinaa", "chinaz"
+    ]
+  },
+  {
+    "code": "DK",
+    "names": [
+      "denmark", "denmarkk", "denmrk", "danmark", "denmarck",
+      "denmmark", "denmardk", "denmrak", "denmarc", "danmrak",
+      "denmrak", "denamrk", "demark", "dnmark", "dnamrk",
+      "denmar", "dnk", "denm", "denm", "dmk"
+    ]
+  },
+  {
+    "code": "EG",
+    "names": [
+      "egypt", "egipyt", "egipt", "egyptt", "egpyt",
+      "egpyt", "egip", "egyptia", "egyptia", "egipytp",
+      "egyp", "egypty", "egiptsy", "egyptt", "egiptz",
+      "egipytay", "egiptay", "egipty", "eygypt", "egyypt"
+    ]
+  },
+  {
+    "code": "FI",
+    "names": [
+      "finland", "finlan", "finlnd", "fin", "finlnad",
+      "finlnd", "finladn", "finldand", "finld", "finanld",
+      "finanld", "fnland", "fnlnd", "finlnd", "finlanmd",
+      "finlanda", "finnd", "finlnd", "finlandd", "fnlan"
+    ]
+  },
+  {
+    "code": "FR",
+    "names": [
+      "france", "frence", "franch", "frasnce", "farnce",
+      "frasnce", "franse", "frenche", "freance", "farance",
+      "franec", "frnach", "frensh", "frenc", "franch",
+      "franc", "francc", "francce", "franec", "franece"
+    ]
+  },
+  {
+    "code": "DE",
+    "names": [
+      "germany", "deutschland", "germani", "germn", "ger",
+      "germnay", "germnay", "geramny", "germnay", "geramny",
+      "germa", "geramn", "detuschland", "deutshland", "deutshland",
+      "deutshland", "deutchland", "deutshlanf", "deustchland", "deutschand"
+    ]
+  },
+  {
+    "code": "GR",
+    "names": [
+      "greece", "grece", "gresse", "greace", "grecia",
+      "grrece", "greec", "greese", "grece", "grece",
+      "greese", "grecee", "grecee", "grece", "greec",
+      "grrece", "greeec", "greci", "grece", "griece"
+    ]
+  },
+  {
+    "code": "IS",
+    "names": [
+      "iceland", "icland", "island", "icleand", "iceldand",
+      "icland", "icelan", "iceldaand", "ichland", "icelandd",
+      "icelan", "icelnd", "icelan", "icelend", "icealnd",
+      "iceeland", "icelandd", "island", "icelan", "iceland"
+    ]
+  },
+  {
+    "code": "IN",
+    "names": [
+      "india", "indai", "indea", "ind", "bharat",
+      "hindustan", "indes", "indai", "indea", "indiya",
+      "indea", "indiaa", "india", "indai", "indai",
+      "indja", "indaja", "indah", "inida", "indja"
+    ]
+  },
+  {
+    "code": "IE",
+    "names": [
+      "ireland", "irland", "irelenad", "erend", "irelnad",
+      "irealdn", "ireand", "irelnd", "irelen", "ireldan",
+      "irelaad", "irealand", "ierland", "irelan", "irlaend",
+      "irelane", "irelnd", "irelandd", "irelanda", "irealnd"
+    ]
+  },
+  {
+    "code": "IL",
+    "names": [
+      "israel", "isreal", "israe", "isr", "isrel",
+      "isral", "isrel", "israeel", "isreel", "israil",
+      "isreal", "isra", "israle", "islerel", "isrea",
+      "isreale", "israell", "isreal", "isale", "isare"
+    ]
+  },
+  {
+    "code": "IT",
+    "names": [
+      "italy", "itally", "italia", "itatly", "itlay",
+      "itayl", "itlay", "ital", "italie", "italty",
+      "italy", "italyy", "itlay", "ital", "italy",
+      "italai", "itally", "itlaly", "italy", "italyy"
+    ]
+  },
+  {
+    "code": "JM",
+    "names": [
+      "jamaica", "jamacia", "jamika", "jamaca", "jamai",
+      "jamacia", "jamaika", "jamaciaa", "jamaic", "jamaia",
+      "jamacc", "jamica", "jamaca", "jamaicca", "jamaicao",
+      "jamaiac", "jamacai", "jamaic", "jamaicca", "jamcia"
+    ]
+  },
+  {
+    "code": "JP",
+    "names": [
+      "japan", "japen", "japn", "japaan", "japan",
+      "japaan", "japn", "japaan", "jappan", "japn",
+      "japaan", "japan", "japaan", "japenn", "jappan",
+      "jpen", "jpn", "jpn", "japan", "japaan"
+    ]
+  },
+  {
+    "code": "KE",
+    "names": [
+      "kenya", "keniya", "kena", "keny", "kenay",
+      "kena", "kenyia", "kenya", "kenya", "kenia",
+      "kanya", "kenya", "kenyaa", "kenya", "kenyaa",
+      "kenias", "kenyaa", "kenny", "kenyia", "kenaa"
+    ]
+  },
+  {
+    "code": "KP",
+    "names": [
+      "north korea", "democratic people’s republic of korea", "dprk",
+      "northkorea", "n korea", "nk", "northkore", "nkorea",
+      "n k", "north korea", "dprk", "n.korea", "north korea",
+      "dpr korea", "north-korea", "nkore", "n.k", "dprk",
+      "north kore", "dprk", "northkorea", "dprk"
+    ]
+  },
+  {
+    "code": "KR",
+    "names": [
+      "south korea", "republic of korea", "skorea", "southkorea",
+      "s korea", "sk", "southkore", "south korea", "s.korea",
+      "republic korea", "sk", "south kor", "s.k", "republic of korea",
+      "skorea", "southkorea", "republic korea", "south kore", "s korea",
+      "sk"
+    ]
+  },
+  {
+    "code": "MX",
+    "names": [
+      "mexico", "mexiko", "mexcio", "mex", "mexci",
+      "mexiko", "mexicoo", "mexic", "mx", "mexcio",
+      "mxico", "mexicco", "mexiqo", "mexixi", "mexic",
+      "mexico", "mexic", "mehico", "mexixo", "mexico"
+    ]
+  },
+  {
+    "code": "NP",
+    "names": [
+      "nepal", "nepalj", "nepaal", "nepaal", "nepall",
+      "nepal", "neepal", "neappal", "nepa", "np",
+      "neapla", "nepl", "neplal", "nepalai", "neppal",
+      "neaplal", "nepala", "nepal", "nepaal", "neapl"
+    ]
+  },
+  {
+    "code": "NL",
+    "names": [
+      "netherlands", "holland", "netherland", "nederland", "nethrlands",
+      "netherlans", "netherlandss", "netherlnads", "hollande", "netlaands",
+      "netherlnds", "nethrland", "netherlandds", "hollan", "nethr",
+      "hollans", "nethrlands", "netherlands", "nh", "nederlanden"
+    ]
+  },
+  {
+    "code": "NZ",
+    "names": [
+      "new zealand", "n zealand", "newzeland", "nz", "newzeland",
+      "newzelandd", "new zealand", "nzweland", "nzealand", "nz land",
+      "nezaland", "n.z.", "nzeland", "new zea land", "newzelnd",
+      "new zeland", "new zelan", "newzelan", "n zealan", "newzealand"
+    ]
+  },
+  {
+    "code": "NO",
+    "names": [
+      "norway", "norwey", "norwary", "norwya", "norwag",
+      "norwy", "norwawy", "norwaa", "norwayy", "noray",
+      "norw", "norawy", "norwway", "norwawy", "norwwaay",
+      "norwaya", "norww", "norwy", "norawy", "norway"
+    ]
+  },
+  {
+    "code": "PK",
+    "names": [
+      "pakistan", "pakisthan", "pak", "pakistaan", "pakistn",
+      "paksitan", "pakstan", "pakistaan", "pakisatan", "pakistsan",
+      "pakisitn", "pakistan", "pakitan", "paksitan", "pakistan",
+      "pakistan", "pasisatan", "paksitan", "pakitsan", "pakistaan"
+    ]
+  },
+  {
+    "code": "PT",
+    "names": [
+      "portugal", "portugal", "portgual", "portgell", "portugal",
+      "portgual", "portggal", "portugual", "portugall", "porugal",
+      "portogal", "portigal", "portgual", "portugal", "portggal",
+      "portagal", "portgual", "portugal", "portgual", "portgual"
+    ]
+  },
+  {
+    "code": "RO",
+    "names": [
+      "romania", "romaina", "romaina", "romanya", "romaynia",
+      "romannia", "romnia", "romini", "romnay", "romannia",
+      "romaniaa", "romani", "romyni", "romaniya", "romnania",
+      "romani", "romannia", "romania", "romnaaia", "romaniay"
+    ]
+  },
+  {
+    "code": "RU",
+    "names": [
+      "russia", "russian federation", "rossiya", "russua", "russua",
+      "russai", "rusuia", "russua", "russsia", "russua",
+      "russi", "russisa", "rusisa", "russija", "russia",
+      "russka", "russla", "russua", "rusinga", "russa"
+    ]
+  },
+  {
+    "code": "SA",
+    "names": [
+      "saudi arabia", "saudi", "saudiarabia", "ksa", "saudia",
+      "sauid", "saoudi arabia", "sauddi arabia", "saudi araia", "saudi rbia",
+      "sauddi arabia", "saudr arabia", "sudi arabia", "saudiarabi", "ksa",
+      "saoudi", "saudai", "ksa", "ksa", "saudi arab"
+    ]
+  },
+  {
+    "code": "SG",
+    "names": [
+      "singapore", "singapor", "singapur", "sg", "singapoor",
+      "singapare", "singaproe", "singaproe", "singaporre", "sgp",
+      "singapre", "singapor", "singapara", "singapoo", "singapre",
+      "singapor", "singaprea", "singapeur", "singaper", "singapor"
+    ]
+  },
+  {
+    "code": "ZA",
+    "names": [
+      "south africa", "southafrica", "rsa", "s africa", "africa",
+      "southafrica", "safrica", "souh africa", "s afr", "s africa",
+      "southafrica", "southafirc", "soouth africa", "south afr", "southafric",
+      "southafri", "southafrca", "souht africa", "s afr", "southafr"
+    ]
+  },
+  {
+    "code": "ES",
+    "names": [
+      "spain", "spane", "spian", "espana", "espanya",
+      "spaain", "spian", "spainn", "espain", "spin",
+      "spian", "spainn", "spain", "spain", "spain",
+      "spain", "spain", "spain", "spainn", "spain"
+    ]
+  },
+  {
+    "code": "SE",
+    "names": [
+      "sweden", "swedan", "swedan", "sweddn", "swend",
+      "swedn", "swden", "swedne", "sweeden", "sweeden",
+      "sweidn", "swedend", "sweden", "sweden", "sweden",
+      "swedenn", "sweden", "sweden", "sweden", "swededn"
+    ]
+  },
+  {
+    "code": "CH",
+    "names": [
+      "switzerland", "helvetia", "switz", "swizerland", "switerland",
+      "switzland", "swisserland", "swterland", "swisserlnd", "switerland",
+      "swisserland", "swisstlerand", "switzrland", "switserland", "swissland",
+      "schweiz", "swisland", "switlerland", "swtsrland", "switerlnd"
+    ]
+  },
+  {
+    "code": "TH",
+    "names": [
+      "thailand", "thiland", "thiland", "thai", "thialnd",
+      "thailadn", "thialand", "tailand", "thiland", "thailadn",
+      "thailnad", "thailand", "thaialand", "thilaand", "thailan",
+      "thailandd", "thialandd", "thailand", "thailand", "thailend"
+    ]
+  },
+  {
+    "code": "TR",
+    "names": [
+      "turkey", "turki", "turkye", "turkei", "turky",
+      "turkayy", "turkei", "turky", "turkei", "turkey",
+      "turkiy", "turkea", "turkie", "turke", "turkuy",
+      "turkej", "turkye", "turkei", "turkjey", "turkexy", "turkiye"
+    ]
+  },
+  {
+    "code": "UA",
+    "names": [
+      "ukraine", "ukranie", "ukran", "ukrain", "ukrane",
+      "ukriana", "ukraine", "ukraina", "ukrane", "ucran",
+      "ukrain", "ukrani", "ukraina", "ukrainea", "ukrane",
+      "ukrain", "ukriane", "ukrai", "ukraine", "ukrien"
+    ]
+  },
+  {
+    "code": "AE",
+    "names": [
+      "uae", "united arab emirates", "emirates", "u.a.e.", "emirate",
+      "united arab emirtates", "united arab emirate", "u.a.e", "uae.", "uaee",
+      "uemirates", "united abr emirates", "unitd arab emirates", "united arab emirates", "u.a.emirates",
+      "uae emirates", "united ara emirates", "united arab emrites", "uae", "uae"
+    ]
+  },
+  {
+    "code": "GB",
+    "names": [
+      "uk", "united kingdom", "great britain", "britain", "england",
+      "gb", "u.k.", "britain", "eng", "england",
+      "united kindom", "united kinogdom", "g britain", "uk", "gb",
+      "unitedkingdom", "greatbritain", "britain", "england", "britian"
+    ]
+  },
+  {
+    "code": "US",
+    "names": [
+      "usa", "america", "united states", "united states of america", "us",
+      "u.s.a", "u.s.", "usa.", "united states america", "the states",
+      "unitedstate", "united sttaes", "united statss", "untied states", "unied states of america",
+      "u.s.a.", "u s a", "us of a", "united state's", "america"
+    ]
+  },
+  {
+    "code": "VN",
+    "names": [
+      "vietnam", "viet nam", "vietnem", "vn", "vietname",
+      "vietnem", "vietnamm", "vietma", "vietnan", "vietnaam",
+      "vietnamee", "viatnam", "vientam", "vietman", "vietma",
+      "vietna", "vietn", "vitenam", "vientnam", "vietnam"
+    ]
+  }
 ]

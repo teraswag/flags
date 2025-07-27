@@ -1,66 +1,67 @@
-let currentcn;
+let currentcn = [];
 let total = 0;
 let right = 0;
-var r = document.querySelector(":root");
+const r = document.querySelector(":root");
 let mode = "normal.json";
+
 setInterval(function(){
-	if (total != 0) {
-		document.querySelector(".score").innerHTML = right+"/"+total+ " ("+Math.round((right/total)*100)+"%)";
-	}
+  if (total !== 0) {
+    document.querySelector(".score").innerHTML = right + "/" + total + " (" + Math.round((right / total) * 100) + "%)";
+  }
 }, 10);
+
 function toTitleCase(str) {
   return str
     .toLowerCase()
-    .split(/[\s-_]+/) // Split by spaces, hyphens, or underscores
+    .split(/[\s-_]+/)
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
 }
+
 async function getRandomKeyValuePair() {
-	
   try {
     const response = await fetch(mode);
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
-    const jsonObj = await response.json();
-    const keys = Object.keys(jsonObj);
-    const randomIndex = Math.floor(Math.random() * keys.length);
-    const randomKey = keys[randomIndex];
-    const randomValue = jsonObj[randomKey];
-
-    return randomValue;
+    const jsonArr = await response.json();
+    const randomIndex = Math.floor(Math.random() * jsonArr.length);
+    return jsonArr[randomIndex];
   } catch (error) {
     console.error('Error:', error);
   }
 }
+
 async function shuffle() {
-	document.querySelector(".coolthing").value = "";
-	document.querySelector(".coolthing").focus();
-	const idkatp = await getRandomKeyValuePair();
-	document.querySelector(".flag").src = "https://flagcdn.com/w1280/"+idkatp.code.toLowerCase()+".png";
-	document.getElementById('favicon').setAttribute('href', "https://flagcdn.com/w1280/"+idkatp.code.toLowerCase()+".png");
-	currentcn = idkatp.name;
+  document.querySelector(".coolthing").value = "";
+  document.querySelector(".coolthing").focus();
+  const idkatp = await getRandomKeyValuePair();
+  document.querySelector(".flag").src = "https://flagcdn.com/w1280/" + idkatp.code.toLowerCase() + ".png";
+  document.getElementById('favicon').setAttribute('href', "https://flagcdn.com/w1280/" + idkatp.code.toLowerCase() + ".png");
+  currentcn = idkatp.names;
 }
+
 function diezneuf() {
-	if (currentcn == document.querySelector(".coolthing").value.toLowerCase()) {
-		document.querySelector(".changer").innerHTML = "Correct!";
-		right++;
-	}
-	else {
-		document.querySelector(".changer").innerHTML = "Incorrect. Correct answer: " + toTitleCase(currentcn);
-	}
-	total++;
-	shuffle();
+  let userGuess = document.querySelector(".coolthing").value.toLowerCase().trim();
+  if (currentcn.some(name => name.toLowerCase() === userGuess)) {
+    document.querySelector(".changer").innerHTML = "Correct!";
+    right++;
+  } else {
+    document.querySelector(".changer").innerHTML = "Incorrect. Correct answer: " + toTitleCase(currentcn[0]);
+  }
+  total++;
+  shuffle();
 }
+
 shuffle();
 
+document.querySelector('.coolthing').addEventListener('keydown', function(event) {
+  if (event.key === "Enter" || event.keyCode === 13) {
+    event.preventDefault();
+    document.querySelector('.myButton').click();
+  }
+});
 
-  document.querySelector('.coolthing').addEventListener('keydown', function(event) {
-    if (event.key === "Enter" || event.keyCode === 13) {  // Check if Enter key was pressed
-      event.preventDefault();  // Prevent default form submit or other actions
-      document.querySelector('.myButton').click();  // Trigger button click
-    }
-  });
 function closePopup() {
   document.querySelector(".popup2").className = "nodisp";
   document.querySelector(".hide").className = "settings";
@@ -136,7 +137,7 @@ function ralFont() {
 }
 
 function pacFont() {
-  r.style.setProperty("--fnt", "'Pacifico', sans-serif");
+  r.style.setProperty("--fnt", "'Pacifico', cursive");
 }
 
 function nabFont() {
@@ -144,7 +145,7 @@ function nabFont() {
 }
 
 function pirFont() {
-  r.style.setProperty("--fnt", "'Pirata One', sans-serif");
+  r.style.setProperty("--fnt", "'Pirata One', cursive");
 }
 
 function aluFont() {
@@ -152,34 +153,34 @@ function aluFont() {
 }
 
 function easyMode() {
-	total = 0;
-	right = 0;
-	mode = "easy.json";
-	shuffle();
-	document.querySelector(".active").classList.remove("active");
-	document.getElementById("ez").classList.add("active");
+  total = 0;
+  right = 0;
+  mode = "easy.json";
+  shuffle();
+  document.querySelector(".active").classList.remove("active");
+  document.getElementById("ez").classList.add("active");
 }
 function normalMode() {
-	total = 0;
-	right = 0;
-	mode = "normal.json";
-	shuffle();
-	document.querySelector(".active").classList.remove("active");
-	document.getElementById("no").classList.add("active");
+  total = 0;
+  right = 0;
+  mode = "normal.json";
+  shuffle();
+  document.querySelector(".active").classList.remove("active");
+  document.getElementById("no").classList.add("active");
 }
 function hardMode() {
-	total = 0;
-	right = 0;
-	mode = "hard.json";
-	shuffle();
-	document.querySelector(".active").classList.remove("active");
-	document.getElementById("ha").classList.add("active");
+  total = 0;
+  right = 0;
+  mode = "hard.json";
+  shuffle();
+  document.querySelector(".active").classList.remove("active");
+  document.getElementById("ha").classList.add("active");
 }
 function allMode() {
-	total = 0;
-	right = 0;
-	mode = "all.json";
-	shuffle();
-	document.querySelector(".active").classList.remove("active");
-	document.getElementById("al").classList.add("active");
+  total = 0;
+  right = 0;
+  mode = "all.json";
+  shuffle();
+  document.querySelector(".active").classList.remove("active");
+  document.getElementById("al").classList.add("active");
 }
